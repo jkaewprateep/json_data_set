@@ -4,6 +4,16 @@ For study support communication messages transferring ( that is becase the sampl
 - Saved to text file required you to convert to string format, file write is only print.
 - Alternate using .json format.
 
+## Sample StateLess messages ##
+
+```
+🔍 No wall free for all { ⬆️, ➡️, ⬅️, ⬇️ }
+🔍 Left wall { ⬆️, ➡️, ⬇️ }, { ⬆️, ⬇️ }, { ⬇️ }, { ⬆️ }
+🔍 Right wall { ⬆️, ⬅️, ⬇️ }, { ⬆️, ⬇️ }, { ⬇️ }, { ⬆️ }
+🔍 Top wall { ➡️, ⬅️, ⬇️ }, { ➡️, ⬅️ }, { ⬅️ }, { ➡️ }
+🔍 Buttom wall { ⬆️, ➡️, ⬅️ }, { ➡️, ⬅️ }, { ⬅️ }, { ➡️ }
+```
+
 ## Build dataset in .JSON format ##
 
 Google .json required attribute mapping.
