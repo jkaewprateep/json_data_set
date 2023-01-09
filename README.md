@@ -1,5 +1,5 @@
 # json_data_set
-For study support communication messages transferring ( that is becase the sample is hard to understanding and they keep asking about this methods when Google JSON is corect but not alway working )
+For study support communication messages transferring ( that is because the sample is hard to understand and they keep asking about this method when Google JSON is correct but not always working )
 
 - Saved to text file required you to convert to string format, file write is only print.
 - Alternate using .json format.
