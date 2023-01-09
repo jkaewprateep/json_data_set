@@ -40,3 +40,5 @@ dataset = tf.data.Dataset.from_tensors(( data, label ))
 plt.imshow( tf.constant( example_phase['1'], shape=( 183, 275, 3) ) )
 plt.show()
 ```
+
+![Alt text](https://github.com/jkaewprateep/json_data_set/blob/main/06.png "Title")
