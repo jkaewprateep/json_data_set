@@ -1,5 +1,8 @@
 # json_data_set
-For study support communication messages transferring ( that is becase the sample is hard and they keep asking about this methods when Google JSON is corect but not alway working )
+For study support communication messages transferring ( that is becase the sample is hard to understanding and they keep asking about this methods when Google JSON is corect but not alway working )
+
+- Saved to text file required you to convert to string format, file write is only print.
+- Alternate using .json format.
 
 ```
 example = tf.train.Example(
