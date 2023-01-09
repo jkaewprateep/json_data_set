@@ -27,3 +27,16 @@ features = {
                 "2": tf.io.FixedLenFeature(shape=[ 183 * 275 * 3 ], dtype=tf.int64)
             })
 ```
+
+```
+data = list(example_phase.items())
+label = [ int(x[0]) for x in data ]
+
+data = [ x[1] for x in data ]
+data = [ x[0] for x in data ]
+
+dataset = tf.data.Dataset.from_tensors(( data, label ))
+
+plt.imshow( tf.constant( example_phase['1'], shape=( 183, 275, 3) ) )
+plt.show()
+```
