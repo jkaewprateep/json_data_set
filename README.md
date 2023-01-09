@@ -4,6 +4,10 @@ For study support communication messages transferring ( that is becase the sampl
 - Saved to text file required you to convert to string format, file write is only print.
 - Alternate using .json format.
 
+## Build dataset in .JSON format ##
+
+Google .json required attribute mapping.
+
 ```
 example = tf.train.Example(
     features=tf.train.Features(
@@ -19,6 +23,10 @@ example = tf.train.Example(
 }))
 ```
 
+## Decode dataset in .JSON format ##
+
+From communiations as .JSON to dataset.
+
 ```
 data_string = json_format.MessageToJson(example)
 example_binary = tf.io.decode_json_example(data_string)
@@ -30,6 +38,9 @@ features = {
                 "2": tf.io.FixedLenFeature(shape=[ 183 * 275 * 3 ], dtype=tf.int64)
             })
 ```
+## Usage ##
+
+Data usage and extactions.
 
 ```
 data = list(example_phase.items())
@@ -43,5 +54,10 @@ dataset = tf.data.Dataset.from_tensors(( data, label ))
 plt.imshow( tf.constant( example_phase['1'], shape=( 183, 275, 3) ) )
 plt.show()
 ```
+
+## Result ##
+
+Sample of data in text string format for large data input than print sting.
+
 
 ![Alt text](https://github.com/jkaewprateep/json_data_set/blob/main/06.png "Title")
