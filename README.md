@@ -6,6 +6,8 @@ For study support communication messages transferring ( that is becase the sampl
 
 ## Sample StateLess messages ##
 
+Sample of StateLess meesages, transfrom messages communication with sequence and structures since UDP or Wireless signals is not garantee order one way is AgentQueue at the remote device, communication devices and the communication data.
+
 ```
 🔍 No wall free for all { ⬆️, ➡️, ⬅️, ⬇️ }
 🔍 Left wall { ⬆️, ➡️, ⬇️ }, { ⬆️, ⬇️ }, { ⬇️ }, { ⬆️ }
